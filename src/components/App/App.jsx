@@ -15,10 +15,10 @@ class App extends Component {
 
   componentDidMount() {
     // localStorage.clear();
-    const storyContact = localStorage.getItem(this.LOCALSTORAGE_KEY);
-    const perseStoryContact = JSON.parse(storyContact);
+    const storeContact = localStorage.getItem(this.LOCALSTORAGE_KEY);
+    const perseStoreContact = JSON.parse(storeContact);
     this.setState({
-      contacts: perseStoryContact ? perseStoryContact : contacts,
+      contacts: perseStoreContact ? perseStoreContact : contacts,
     });
   }
 
